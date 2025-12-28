@@ -1,0 +1,23 @@
+{
+	"display": {
+		"icon": {
+			"id": "white_wool"
+		},
+		"title": "SillyGame",
+		"description": [
+			"",
+			{
+				"text": ":3",
+				"color": "blue"
+			}
+		],
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"parent": "global:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

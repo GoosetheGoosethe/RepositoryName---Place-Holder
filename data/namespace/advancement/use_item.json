@@ -5,7 +5,7 @@
     }
   },
   "rewards": {
-    "function": "namespace:item_used"
+    "function": "namespace:if_statments/item_used"
   },
   "sends_telemetry_event": false
 }

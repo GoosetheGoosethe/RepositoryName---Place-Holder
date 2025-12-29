@@ -9,7 +9,7 @@ fill -50 100 50 -50 1 -50 bedrock
 fill 50 100 50 50 1 -50 bedrock
 fill 50 100 -50 -50 1 -50 bedrock
 fill -50 100 50 50 1 50 bedrock
-#clearing the inside
+#clearing the inside *(inefficient **world dependant, nothing for menu)
 fill 49 1 49 -49 1 -49 air
 fill 49 2 49 -49 2 -49 air
 fill 49 3 49 -49 3 -49 air

@@ -1,0 +1,11 @@
+{
+  "criteria": {
+    "using item": {
+      "trigger": "minecraft:using_item"
+    }
+  },
+  "rewards": {
+    "function": "namespace:item_used"
+  },
+  "sends_telemetry_event": false
+}

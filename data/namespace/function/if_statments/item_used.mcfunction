@@ -1,7 +1,7 @@
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:fire_charge"}}] anchored eyes run summon fireball ^ ^-.3 ^1.8
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:fire_charge"}}] run clear @s fire_charge 1
 
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:tnt"}}] as @s anchored eyes run summon tnt ^ ^ ^25 {fuse:45}
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:tnt"}}] as @s anchored eyes run summon tnt ^ ^ ^25 {fuse:45,explosion_power:3}
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:tnt"}}] run clear @s tnt 1
 
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:shears"}}] at @s run fill ~5 ~5 ~5 ~-5 ~-5 ~-5 air replace white_wool

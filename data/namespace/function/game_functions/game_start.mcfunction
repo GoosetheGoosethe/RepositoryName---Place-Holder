@@ -1,6 +1,10 @@
+     tp @s 0 1 0
 #function run when game is started
      effect give @s instant_health 1 100 true
      effect give @s saturation 3 100 true
+     effect give @s slowness 1 3 true
+     effect give @s resistance 3 100 true
+
  #giving players items
      clear @s
      give @s stone_sword
@@ -28,5 +32,9 @@
       #execute if entity @a[scores={item_fireball= 1}] run give @a[gamemode= survival] fire_charge
       #execute if entity @a[scores={item_fireball= 1}] run give @a[gamemode= survival] fire_charge
       #execute if entity @a[scores={item_fireball= 1}] run give @a[gamemode= survival] fire_charge
-tp @s 0 1 0
+   #reletive // spawn in ++ (*not functional needs fixing)
+     execute at @s run particle dragon_breath ^ ^1.6 ^.3 0 0 0 0.1 20 force @a
+     playsound item.goat_horn.sound.1 master @s 0 1 0 1
+     fill ~3 ~-1 ~3 ~-3 ~3 ~-3 air replace white_wool
+     fill ~3 ~-1 ~3 ~-3 ~3 ~-3 air replace water
 

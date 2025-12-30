@@ -1,9 +1,8 @@
 #function run when game is started
-
-effect give @s instant_health 1 100 true
-effect give @s saturation 3 100 true
-    #giving players items
-    clear @s
+     effect give @s instant_health 1 100 true
+     effect give @s saturation 3 100 true
+ #giving players items
+     clear @s
      give @s stone_sword
      give @s white_wool 64
      give @s white_dye[consumable={consume_seconds:1000000000},enchantments={unbreaking:3},item_name=["mini fort"]]
@@ -14,7 +13,7 @@ effect give @s saturation 3 100 true
      give @s shears[consumable={consume_seconds:1000000000}]
      give @s tnt[consumable={consume_seconds:1000000000}] 6
      give @s snowball 5
-     #e
+   
       
      #s
       #give @s[gamemode= survival] fishing_rod 1

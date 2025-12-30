@@ -3,7 +3,7 @@
  scoreboard players enable @a SuicideButton
 
 #lag clearer
- execute at @a run execute as @e[distance= 300..] run kill @s
+ execute at @a run kill @e[distance= 300..10000,type=!player]
 #spawners
  execute unless entity @e[tag=GameTP,type=interaction,distance=..200] run summon interaction 5 -60 9 {width:15,height:15,Tags:["GameTP"]}
  execute unless entity @e[tag=ItemTP,type=interaction,distance=..200] run summon interaction 5 -60 2 {width:3,height:8,Tags:["ItemTP"]}

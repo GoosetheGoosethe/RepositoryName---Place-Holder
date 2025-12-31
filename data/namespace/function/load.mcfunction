@@ -10,6 +10,8 @@ setworldspawn 5 -59 14
  #health
   scoreboard objectives add health health
   scoreboard objectives setdisplay below_name health
+ #death
+  scoreboard objectives add died deathCount
  #kys
   scoreboard objectives add SuicideButton trigger
  #item give scorboards (**better system upgrades needed here**)

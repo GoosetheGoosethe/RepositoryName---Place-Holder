@@ -6,24 +6,12 @@
  execute at @a run execute as @e[distance= 300..10000] run kill @s
 #spawners 
  #interactions
-  execute at @a unless entity @e[tag=GameTP,type=interaction,distance=..200] run summon interaction 5 -60 9 {width:15,height:15,Tags:["GameTP"]}
+  execute at @a unless entity @e[tag=GameTP,type=interaction,distance=..200] run summon interaction 5 -60 9 {width:1,height:1,Tags:["GameTP"]}
   execute at @a unless entity @e[tag=ItemTP,type=interaction,distance=..200] run summon interaction 5 -60 2 {width:3,height:8,Tags:["ItemTP"]}
   execute at @a unless entity @e[tag=lobbyTP,type=interaction,distance=..200] run summon interaction 5 -60 -10 {width:3.2,height:8,Tags:["lobbyTP"]}
 
-  execute at @a unless entity @e[tag=SelectionBlocker7,type=interaction,distance=..200] run summon interaction 8 -60 -10 {width:3.2,height:8,Tags:["SelectionBlocker7"]}
-  execute at @a unless entity @e[tag=SelectionBlocker8,type=interaction,distance=..200] run summon interaction 2 -60 -10 {width:3.2,height:8,Tags:["SelectionBlocker8"]}
-
   execute at @a unless entity @e[tag=SelectionBlocker1,type=interaction,distance=..200] run summon interaction 5 -60 -21 {width:30,height:.5,Tags:["SelectionBlocker1"]}
-  execute at @a unless entity @e[tag=SelectionBlocker11,type=interaction,distance=..200] run summon interaction 5 -56 -21 {width:30,height:.5,Tags:["SelectionBlocker11"]}
 
-  execute at @a unless entity @e[tag=SelectionBlocker2,type=interaction,distance=..200] run summon interaction 5 -62 -40 {width:18,height:7,Tags:["SelectionBlocker2"]}
-
-  execute at @a unless entity @e[tag=SelectionBlocker3,type=interaction,distance=..200] run summon interaction 14 -62 -16 {width:10,height:8,Tags:["SelectionBlocker3"]}
-  execute at @a unless entity @e[tag=SelectionBlocker4,type=interaction,distance=..200] run summon interaction 14 -62 -26 {width:10,height:8,Tags:["SelectionBlocker4"]}
-
-  execute at @a unless entity @e[tag=SelectionBlocker5,type=interaction,distance=..200] run summon interaction -4 -62 -16 {width:10,height:8,Tags:["SelectionBlocker5"]}
-  execute at @a unless entity @e[tag=SelectionBlocker6,type=interaction,distance=..200] run summon interaction -4 -62 -26 {width:10,height:8,Tags:["SelectionBlocker6"]}
- 
  #partical generators 
     execute at @a unless entity @e[distance=..200,tag=MainGameParticals] run summon armor_stand 5 -60 9 {Invisible:true,Invulnerable:true,Tags:["MainGameParticals"]}
     execute at @a unless entity @e[distance=..200,tag=MainGameParticals2] run summon armor_stand 5 -60 9 {Invisible:true,Invulnerable:true,Tags:["MainGameParticals2"]}

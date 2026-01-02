@@ -1,4 +1,4 @@
- execute unless entity @s[scores={utility=1..,shore=1..,weaponry=1..,munition=1..}]
+ execute unless entity @s[scores={utility=1..,shore=1..,weaponry=1..,munition=1..}] run return run title @s actionbar {text:"You must select 4 items (1 from each catagory) before you can enter the game! ",color:"red"}
  
      tp @s 0 1 0
 #function run when game is started
@@ -22,9 +22,9 @@
 
      execute if entity @s[scores={munition=1}] run give @s fire_charge[consumable={consume_seconds:1000000000},item_name=["§5 Fire Ball"]] 12
      execute if entity @s[scores={munition=2}] run give @s tnt[consumable={consume_seconds:1000000000},item_name=["§5 TNT"]] 10
-     execute if entity @s[scores={munition=3}] run give @s lightning_rod[consumable={consume_seconds:1000000000},item_name=["§5 Lightning Rod"]] 6
+     execute if entity @s[scores={munition=3}] run give @s lightning_rod[consumable={consume_seconds:1000000000},item_name=["§5 Lightning Rod"]] 4
 
-     execute if entity @s[scores={utility=1}] run give @s snowball[item_name=["§9 Snowball"]] 5
+     execute if entity @s[scores={utility=1}] run give @s snowball[item_name=["§9 Snowball"]] 2
      execute if entity @s[scores={utility=2}] run give @s ender_pearl[item_name=["§9 Ender Pearl"]] 1
      execute if entity @s[scores={utility=3}] run give @s shears[consumable={consume_seconds:1000000000},item_name=["§9 Shears"]]
 

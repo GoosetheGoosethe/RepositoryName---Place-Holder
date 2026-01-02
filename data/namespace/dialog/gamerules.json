@@ -1,0 +1,69 @@
+{
+  "type": "minecraft:dialog_list",
+  "title": {
+    "text": "Game Rules!",
+    "color": "#0008ff",
+    "bold": true,
+    "underlined": false
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "text": "Welcome to \"Goose silly game \" tm, hover me for a game description.",
+          "hover_event": {
+          "action": "show_text",
+          "value": "Welcome to my very silly game, first thing you should do, is go to item selection to equip some items. There are four catagories of items; Shore: protection or healing items. Munition: explosives go boom. Utility: generally usefull items. And Weaponry: weapons that can be traded in for other items. Once you've selected all four items, you may hop into the game at any time to go battle other players! Note that all players, regardless of equipment, get 3 golden carrots and a stack of wool"
+         }
+        }
+      ]
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Hover me for Weaponry type item descriptions!",
+         "hover_event": {
+          "action": "show_text",
+          "value": "Stone Sword: Can be traded for [3x TNT , 4x Fire Ball] , Golden Axe: Can be traded for [1x Golden Apple , 1x Ender Pearl]. Bow & Arrows: Bow can be traded for [2x Lightning Rod , 1x Snowball] Arrows do not trade. {Weaponry can be traded via of-handing them.}"
+         }
+      }
+    },
+
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Hover me for Munition type item descriptions!",
+         "hover_event": {
+          "action": "show_text",
+          "value": "Fire Ball: Right click to launch a fire ball at the direction your looking (NOTE: fire ball hit boxes and vertical speed may vary and are inconsistent)(x12 upon game start). TNT: summon a tnt 25 blocks infront of you, indicated by the particals shown when held (x10 upon game start). Lightning Rod: Summon a lightning strike 10 blocks if front of you, indicated by the particals shown when held (x4 upon game start)."
+         }
+      }
+    },
+
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Hover me for Utility type item descriptions!",
+         "hover_event": {
+          "action": "show_text",
+          "value": "Snowball: When thrown, Snowballs will build a wool pathway (3x1x3) beneath them, Snowballs will always have 0 gravity, and lift 1 block up once every 2 seconds or so (x2 upon game start). Ender Pearl: Vanilla Ender Pearls (x1 upon game start). Shears: Instantly removes wool in a 10x10x10 block area, one time use. (x1 upon game start)"
+         }
+      }
+    },
+
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Hover me for Shore type item descriptions!",
+         "hover_event": {
+          "action": "show_text",
+          "value": "Fortress: Right click to encase yourself in a 8x8x8 cube of wool, any wool inside the area of the fortress gets removed (x1 upon game start). Golden Apple: Vanilla golden apple (x1 upon game start)."
+         }
+      }
+    }
+
+  ],
+  "can_close_with_escape": true,
+  "dialogs": []
+}

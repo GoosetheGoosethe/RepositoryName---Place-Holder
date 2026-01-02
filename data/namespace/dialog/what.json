@@ -1,0 +1,6 @@
+{
+    "type": "confirmation",
+    "title": "nah",
+    "yes": {"label": "yuh"},
+    "no": {"label": "nuh"}
+}

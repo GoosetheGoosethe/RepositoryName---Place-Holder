@@ -2,11 +2,14 @@ spawnpoint @a 5 -59 14
 setworldspawn 5 -59 14
 
 #scorboards:
+
+ #age
+  scoreboard objectives add age dummy
  #dummy
   scoreboard objectives add dummycount dummy
   #text for debuging (**upgraded needs cleaning)
   execute store result score #entitycounter dummycount if entity @e
-  tellraw @a[gamemode=creative] {text:"reloaded ver 1.8 (demo) {click for debug options, hover for debug text.}",click_event:{action:"run_command",command:"function namespace:debugging/debugtellraw"},hover_event:{action:"show_text",value:[{text:"entity counter: "},{score:{name:"#entitycounter",objective:"dummycount"}}]}} 
+  tellraw @a[gamemode=creative] {text:"reloaded ver 1.9 (demo) {click for debug options, hover for debug text.}",click_event:{action:"run_command",command:"function namespace:debugging/debugtellraw"},hover_event:{action:"show_text",value:[{text:"entity counter: "},{score:{name:"#entitycounter",objective:"dummycount"}}]}} 
  #health
   scoreboard objectives add health health
   scoreboard objectives setdisplay below_name health
@@ -21,6 +24,14 @@ setworldspawn 5 -59 14
  scoreboard objectives add weaponry dummy
 
  scoreboard objectives add item_used dummy
+ #pyhsics keepers
+    scoreboard objectives add motion_x1 dummy
+    scoreboard objectives add motion_y1 dummy
+    scoreboard objectives add motion_z1 dummy
+
+    scoreboard objectives add motion_x2 dummy
+    scoreboard objectives add motion_y2 dummy
+    scoreboard objectives add motion_z2 dummy
 #entity count debug (debug)
 kill @e[type=interaction]
 

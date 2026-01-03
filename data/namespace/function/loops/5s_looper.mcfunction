@@ -11,7 +11,7 @@
   execute at @a unless entity @e[tag=lobbyTP,type=interaction,distance=..200] run summon interaction 5 -60 -10 {width:3.2,height:8,Tags:["lobbyTP"]}
 
   execute at @a unless entity @e[tag=AmplifyTP,type=interaction,distance=..200] run summon interaction 5 -60 16 {width:3,height:8,Tags:["AmplifyTP"]}
-  execute at @a unless entity @e[tag=lobbyTP2,type=interaction,distance=..200] run summon interaction 5 -60 -10 {width:3.2,height:8,Tags:["lobbyTP2"]}
+  execute at @a unless entity @e[tag=lobbyTP2,type=interaction,distance=..200] run summon interaction 5 -60 22 {width:3.2,height:8,Tags:["lobbyTP2"]}
 
 
   execute at @a unless entity @e[tag=SelectionBlocker1,type=interaction,distance=..200] run summon interaction 5 -60 -21 {width:30,height:.5,Tags:["SelectionBlocker1"]}

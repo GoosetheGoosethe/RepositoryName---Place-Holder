@@ -1,6 +1,15 @@
 {
     "type": "confirmation",
-    "title": "nah",
-    "yes": {"label": "yuh"},
-    "no": {"label": "nuh"}
+    "title": "Equip this amplifier?",
+
+    "yes": {
+        "label": "yes!",
+        "action": {
+            "type": "dynamic/run_command",
+            "template": "give @s iron_ingot$(x)"
+
+        }
+},
+    "no": {"label": "no."}
+    
 }

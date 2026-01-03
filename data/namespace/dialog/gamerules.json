@@ -25,7 +25,7 @@
         "text": "Hover me for Weaponry type item descriptions!",
          "hover_event": {
           "action": "show_text",
-          "value": "Stone Sword: Can be traded for [3x TNT , 4x Fire Ball] , Golden Axe: Can be traded for [1x Golden Apple , 1x Ender Pearl]. Bow & Arrows: Bow can be traded for [2x Lightning Rod , 1x Snowball] Arrows do not trade. {Weaponry can be traded via of-handing them.}"
+          "value": "Stone Sword: Can be traded for [3x TNT , 4x Fire Ball] , Golden Axe: Can be traded for [1x Golden Apple , 1x Ender Pearl]. Bow & Arrows: Bow can be traded for [2x Lightning Rod , 1x Snowball] Arrows do not trade. {Weaponry can be traded via off-handing them.}"
          }
       }
     },

@@ -1,0 +1,15 @@
+{
+    "name" : "beet_library_bolt",
+    "description" : "Bolt for minecraft.",
+    "require": [
+        "bolt"
+    ],
+    "datapack": {
+        "load": ["src"]
+    },
+    "resource_pack":{
+        "load": ["src"]
+    },
+    "pipeline": ["mehca"],
+    "output": "build"
+}

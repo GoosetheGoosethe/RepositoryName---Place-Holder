@@ -4,16 +4,15 @@ execute at @e[type=snowball,scores={age=3..},distance=..1000] run fill ~-1 ~-1 ~
 execute as @e[type=snowball,distance=..1000] run data modify entity @s Motion[1] set value 0.1
 
 
-clear @a[nbt={Inventory:[{id:"minecraft:purple_dye",count:2}]},tag=dead,distance=..100] purple_dye
-execute at @a[tag=dead,distance=..100] run item replace entity @a container.8 with purple_dye[consumable={consume_seconds:1000000000},custom_name="§9 Game Rules"]
-kill @e[type=item,nbt={Item:{id:"minecraft:purple_dye"}}]
-
- clear @a[nbt={Inventory:[{id:"minecraft:red_dye",count:2}]},tag=dead,distance=..100] red_dye
-execute at @a[tag=dead,distance=..100] run item replace entity @a container.4 with red_dye[consumable={consume_seconds:1000000000},custom_name="§9 Reset Equipment"]
-kill @e[type=item,nbt={Item:{id:"minecraft:red_dye"}}]
-
 fill -386 64 2 -374 68 -5 air replace minecraft:white_wool
 clear @a bucket
+#items in lobby
+  clear @a[nbt={Inventory:[{id:"minecraft:purple_dye",count:2}]},tag=dead,distance=..100] purple_dye
+  execute at @a[tag=dead,distance=..100] run item replace entity @a container.8 with purple_dye[consumable={consume_seconds:1000000000},custom_name="§9 Game Rules"]
+  kill @e[type=item,nbt={Item:{id:"minecraft:purple_dye"}}]
+  clear @a[nbt={Inventory:[{id:"minecraft:red_dye",count:2}]},tag=dead,distance=..100] red_dye
+  execute at @a[tag=dead,distance=..100] run item replace entity @a container.4 with red_dye[consumable={consume_seconds:1000000000},custom_name="§9 Reset Equipment"]
+  kill @e[type=item,nbt={Item:{id:"minecraft:red_dye"}}]
 #TP // lobby and selection
  execute at @e[type=interaction,limit=1,tag=GameTP] as @a[distance=0..2] run function namespace:game_functions/game_start
  execute at @e[type=interaction,limit=1,tag=GameTP] run fill ~10 ~10 ~10 ~-10 ~-1 ~-10 air replace white_wool
@@ -21,8 +20,8 @@ clear @a bucket
  execute at @e[type=interaction,limit=1,tag=ItemTP] as @a[distance=..1.001] run function namespace:lobby_functions/item_tp
  execute at @e[type=interaction,limit=1,tag=lobbyTP] as @a[distance=..1.001] run function namespace:lobby_functions/lobby_tp
 
- execute at @e[type=interaction,limit=1,tag=ItemTP] as @a[distance=..1.001] run function namespace:lobby_functions/amplify_tp
- execute at @e[type=interaction,limit=1,tag=lobbyTP] as @a[distance=..1.001] run function namespace:lobby_functions/lobby_tp_2
+ execute at @e[type=interaction,limit=1,tag=AmplifyTP] as @a[distance=..1.001] run function namespace:lobby_functions/amplify_tp
+ execute at @e[type=interaction,limit=1,tag=lobbyTP2] as @a[distance=..1.001] run function namespace:lobby_functions/lobby_tp_2
 #particals
  execute at @e[tag=MainGameParticals,distance=..200] run particle end_rod ^ ^3.8 ^2.3 0 0 0 0 1 force @a
  execute as @e[tag=MainGameParticals,distance=..200] at @e[tag=MainGameParticals,distance=..200] run tp @s ~ ~ ~ ~3 ~

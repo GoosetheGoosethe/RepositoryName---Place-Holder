@@ -1,2 +1,0 @@
-summon chest_minecart ~ ~ ~ {DisplayState:{Name:"minecraft:air"},Items:[{Slot:0b,id:"minecraft:red_dye",count:1},{Slot:1b,id:"minecraft:red_dye",count:1}]}
-effect give @e[type=chest_minecart] invisibility infinite 100 true

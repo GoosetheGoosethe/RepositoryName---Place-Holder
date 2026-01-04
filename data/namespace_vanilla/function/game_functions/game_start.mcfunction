@@ -30,6 +30,7 @@
 
      execute if entity @s[scores={shore=1}] run give @s white_dye[consumable={consume_seconds:1000000000},enchantments={unbreaking:3},item_name=["§3 mini fort"]]
      execute if entity @s[scores={shore=2}] run give @s golden_apple[item_name=["§3 Golden Apple"]]
+     execute if entity @s[scores={shore=3}] run give @s turtle_scute[consumable={consume_seconds:1000000000},item_name=["§3 Turtle Scute"]]
      #execute if entity @s[scores={shore=3}] run give @s lightning_rod[consumable={consume_seconds:1000000000}] 10
 
 

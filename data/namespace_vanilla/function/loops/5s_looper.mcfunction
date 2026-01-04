@@ -26,6 +26,7 @@
 
     execute unless entity @e[distance=..200,tag=Fortress] run summon item_display 1 -58.5 -23 {item_display:"fixed",item:{id:"minecraft:white_dye",count:1},Tags:["Fortress"],Rotation:[90,0]}
     execute unless entity @e[distance=..200,tag=Golden_Apple] run summon item_display 1 -58.5 -26 {item_display:"fixed",item:{id:"minecraft:golden_apple",count:1},Tags:["Golden_Apple"],Rotation:[90,0]}
+    execute unless entity @e[distance=..200,tag=Turtle_Scute] run summon item_display 1 -58.5 -29 {item_display:"fixed",item:{id:"minecraft:turtle_scute",count:1},Tags:["Turtle_Scute"],Rotation:[90,0]}
 
     execute unless entity @e[distance=..200,tag=Stone_Sword] run summon item_display 9 -58.5 -14 {item_display:"fixed",item:{id:"minecraft:stone_sword",count:1},Tags:["Stone_Sword"],Rotation:[90,0]}
     execute unless entity @e[distance=..200,tag=Golden_Sword] run summon item_display 9 -58.5 -17 {item_display:"fixed",item:{id:"minecraft:golden_axe",count:1},Tags:["Golden_Sword"],Rotation:[90,0]}
@@ -42,6 +43,7 @@
 
     execute unless entity @e[distance=..200,tag=Fortress_I] run summon interaction 1 -59 -23 {Tags:["Fortress_I"],response:true}
     execute unless entity @e[distance=..200,tag=Golden_Apple_I] run summon interaction 1 -59 -26 {Tags:["Golden_Apple_I"],response:true}
+    execute unless entity @e[distance=..200,tag=Turtle_Scute_I] run summon interaction 1 -59 -29 {Tags:["Turtle_Scute_I"],response:true}
 
     execute unless entity @e[distance=..200,tag=Stone_Sword_I] run summon interaction 9 -59 -14 {Tags:["Stone_Sword_I"],response:true}
     execute unless entity @e[distance=..200,tag=Golden_Sword_I] run summon interaction 9 -59 -17 {Tags:["Golden_Sword_I"],response:true}
@@ -54,4 +56,4 @@
 #spawnpoint
  spawnpoint @a 0 -59 10
 #loop
- schedule function namespace:loops/5s_looper 5s
+ schedule function namespace_vanilla:loops/5s_looper 5s

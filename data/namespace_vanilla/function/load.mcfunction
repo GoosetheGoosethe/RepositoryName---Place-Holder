@@ -36,4 +36,4 @@ setworldspawn 5 -59 14
 kill @e[type=interaction]
 
 #loop kickstarters
- schedule function namespace:loops/5s_looper 1s
+ schedule function namespace_vanilla:loops/5s_looper 1s

@@ -1,4 +1,4 @@
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:fire_charge"}}] as @s anchored eyes run function namespace:physics/fire_ball_leader
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:fire_charge"}}] as @s anchored eyes run function namespace_vanilla:physics/fire_ball_leader
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:fire_charge"}}] run clear @s fire_charge 1
 
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:tnt"}}] as @s anchored eyes run summon tnt ^ ^ ^25 {fuse:40,explosion_power:3}
@@ -14,8 +14,10 @@ execute if entity @s[nbt={SelectedItem:{id:"minecraft:white_dye"}}] at @s run fi
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:white_dye"}}] at @s run fill ~3 ~3 ~3 ~-3 ~-3 ~-3 air replace white_wool
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:white_dye"}}] run clear @s white_dye[item_name=["§3 mini fort"]] 1
 
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:snowball"}}] as @s anchored eyes run function namespace:physics/snowball_leader
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:snowball"}}] run clear @s snowball 1
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:turtle_scute"}}] run effect give @s absorption 10 4 true
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:turtle_scute"}}] run effect give @s resistance 4 10 true
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:turtle_scute"}}] run effect give @s slowness 4 10 true
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:turtle_scute"}}] run clear @s turtle_scute 1
 
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:red_dye"}}] run scoreboard players set @s munition 0
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:red_dye"}}] run scoreboard players set @s utility 0
@@ -23,5 +25,5 @@ execute if entity @s[nbt={SelectedItem:{id:"minecraft:red_dye"}}] run scoreboard
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:red_dye"}}] run scoreboard players set @s shore 0 
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:red_dye"}}] run title @s actionbar {text:"Equipment reset",color:"red"}
 
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:purple_dye"}}] run dialog show @s namespace:gamerules
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:purple_dye"}}] run dialog show @s namespace_vanilla:gamerules
 

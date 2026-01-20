@@ -58,7 +58,7 @@
         "text": "Hover me for Shore type item descriptions!",
          "hover_event": {
           "action": "show_text",
-          "value": "Fortress: Right click to encase yourself in a 8x8x8 cube of wool, any wool inside the area of the fortress gets removed (x1 upon game start). Golden Apple: Vanilla golden apple (x1 upon game start)."
+          "value": "Fortress: Right click to encase yourself in a 8x8x8 cube of wool, any wool inside the area of the fortress gets removed (x1 upon game start). Golden Apple: Vanilla golden apple (x1 upon game start). Turtle Scute: Right click to become invuanrable for 5 seconds, but become inable to move for the duration."
          }
       }
     }

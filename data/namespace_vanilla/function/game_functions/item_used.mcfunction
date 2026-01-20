@@ -14,7 +14,7 @@ execute if entity @s[nbt={SelectedItem:{id:"minecraft:white_dye"}}] at @s run fi
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:white_dye"}}] at @s run fill ~3 ~3 ~3 ~-3 ~-3 ~-3 air replace white_wool
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:white_dye"}}] run clear @s white_dye[item_name=["§3 mini fort"]] 1
 
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:turtle_scute"}}] run effect give @s absorption 10 4 true
+
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:turtle_scute"}}] run effect give @s resistance 4 10 true
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:turtle_scute"}}] run effect give @s slowness 4 10 true
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:turtle_scute"}}] run clear @s turtle_scute 1

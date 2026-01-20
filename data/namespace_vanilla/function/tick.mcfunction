@@ -3,6 +3,7 @@ scoreboard players add @e[type=!player,distance=..1000] age 1
 
 
 execute at @e[type=snowball,scores={age=3..},distance=..1000] run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1 white_wool replace air
+kill @e[type=snowball,scores={age=140..},distance=..1000]
 execute as @e[type=snowball,distance=..1000] run data modify entity @s Motion[1] set value 0.1
 
 

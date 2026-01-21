@@ -94,7 +94,7 @@ clear @a bucket
      #Bloodsplater
      tag @a[scores={Passive_Amplifiers=2,health=20..}] add max_health
      execute at @a[scores={Passive_Amplifiers=2,health=..19},tag=max_health] run scoreboard players set @a[distance=1..8] bleeding 181
-     execute at @a[scores={Passive_Amplifiers=2,health=..19},tag=max_health] run say hi
+
 
      tag @a[scores={Passive_Amplifiers=2,health=..19},tag=max_health] remove max_health
      #Obituary
@@ -170,7 +170,7 @@ clear @a bucket
      scoreboard players set @a[scores={Energy_Amplifiers=7,AE=119..},distance=..600,tag=!dead] AE 0
     #riftwalker
      execute as @a[scores={Energy_Amplifiers=8},tag=!dead,distance=..600] store result bossbar ae_rift_walker value run scoreboard players get @s AE
-     scoreboard players add @a[scores={Energy_Amplifiers=8,AE=..1091},tag=!dead,distance=..600,predicate=namespace_vanilla:sneaking] AE 1
+     scoreboard players add @a[scores={Energy_Amplifiers=8,AE=..100},tag=!dead,distance=..600,predicate=namespace_vanilla:sneaking] AE 1
      execute at @a[scores={Energy_Amplifiers=8,AE=100},tag=!dead,distance=..600,predicate=namespace_vanilla:sneaking] run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Tags:[rift]}
      scoreboard players add @a[scores={Energy_Amplifiers=8,AE=100..},tag=!dead,distance=..600] teleport_counter 1
      scoreboard players add @e[distance=..600,tag=rift,type=armor_stand] AE 1
@@ -179,6 +179,7 @@ clear @a bucket
      kill @e[distance=..600,tag=rift,type=armor_stand,limit=1,scores={AE=200..}]
      scoreboard players set @a[distance=..600,tag=!dead,scores={Energy_Amplifiers=8,AE=100..,teleport_counter=200..}] AE 0 
      scoreboard players set @a[distance=..600,tag=!dead,scores={Energy_Amplifiers=8,teleport_counter=200..}] teleport_counter 0 
+     scoreboard players set @a[distance=..600,tag=dead,scores={Energy_Amplifiers=8}] teleport_counter 0 
      execute at @e[distance=..600,tag=rift,type=armor_stand] run particle portal ~ ~ ~ 0.1 0.5 0.1 0.03 30 force @a[distance=..600,tag=!dead,scores={Energy_Amplifiers=8}]
 
 

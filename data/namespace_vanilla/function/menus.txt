@@ -17,7 +17,7 @@ amplifiers:
         6. Of Welkin- while there you are 20 blocks or higher above ground-level, gain slowfalling. 
         7. Of Abyss- whilst on the ground gain speed. while in the air become afflicted with exposed.
         8. Eleventh Hour- after death, spawn a TNT on your corpse, with a fuse of .5 seconds.
-        9. Featherlight- decrease you max health by 3 hearts. you have permenant speed. 
+        9. Featherlight- decrease you max health by 3 hearts. you have permenant speed.
         10. Apprehension- if there is TNT within 5 blocks of you or directly above you, a bell noise will be played. additionally TNT is revealed to you.
         11. Normalcy- increase your max health by 1.5 hearts. and start with absorbtion for 20 seconds.
 

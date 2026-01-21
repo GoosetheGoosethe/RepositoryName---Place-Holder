@@ -1,4 +1,5 @@
-{
+{ 
+  
   "type": "minecraft:dialog_list",
   "title": {
     "text": "Game Rules!",
@@ -59,6 +60,29 @@
          "hover_event": {
           "action": "show_text",
           "value": "Fortress: Right click to encase yourself in a 8x8x8 cube of wool, any wool inside the area of the fortress gets removed (x1 upon game start). Golden Apple: Vanilla golden apple (x1 upon game start). Turtle Scute: Right click to become invuanrable for 5 seconds, but become inable to move for the duration."
+         }
+      }
+    },
+
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Hover me for Passive Amplifier descriptions!",
+         "hover_event": {
+          "action": "show_text",
+          "value": " "
+         }
+
+      }
+    },
+
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Hover me for Energy Amplifier descriptions!",
+         "hover_event": {
+          "action": "show_text",
+          "value": " "
          }
       }
     }

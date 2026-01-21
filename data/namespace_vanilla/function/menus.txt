@@ -3,3 +3,45 @@ Utility -- Snowballs (*), Shears (*), Ender pearls (***), Water (**), |
 Shore -- Fortress (**), Golden apples (***), |
 Munitions -- TNT (***), Fireballs (*), | Lightning Rod (**),
 Basis -- Golden carrots (*), Wool (*), |
+
+
+
+amplifiers:
+
+    Passive:
+        1. Shadowborn- while in complete darkness, gain strength.
+        2. Bloodsplater- the first time you take damage after being at full health, the nearest player gets afflicted with bleeding. In addition, being within 10 blocks of a bleeding player gives them the glowing affect.
+        3. Inclination- you may trade a stack of Wool to get at random: 1 TNT, 1 Snowball, 1, Fireball, 1 Fortress, 32 Wool, 1 Golden Apple, 1 inert Golden Axe. 16 Arrows, 1 Lightning Rod, 1 Ender Pearl. 12 TNT and 2 Golden Apples.
+        4. Idiosyncrasy- trading any Weaponry will cuase you and anyone within 8 blocks to be concused. additionally, you gain speed for 10 seconds.
+        5. Obituary- while on 4 hearts or less, gain strength III, poison, and hunger.
+        6. Of Welkin- while there you are 20 blocks or higher above ground-level, gain slowfalling. 
+        7. Of Abyss- whilst on the ground gain speed. while in the air become afflicted with exposed.
+        8. Eleventh Hour- after death, spawn a TNT on your corpse, with a fuse of .5 seconds.
+        9. Featherlight- decrease you max health by 3 hearts. you have permenant speed. 
+        10. Apprehension- if there is TNT within 5 blocks of you or directly above you, a bell noise will be played. additionally TNT is revealed to you.
+        11. Normalcy- increase your max health by 1.5 hearts. and start with absorbtion for 20 seconds.
+
+    Energy:
+        1. Vertical Velocity- while in the air, gain 20 AE a second. once you have 40 AE gain slowfalling for 3 seconds, and reset your AE. in addition, gain speed for 6 seconds if you reach 40 AE while you have slowfalling.
+        2. Athletics- while sprinting, gain 20 AE a second. once you have 100 AE gain speed for 4 seconds, AE disipates at a rate of 20 AE a second while not sprinting. reaching 300 AE while give you the "exhausted" status affect.
+        3. Weary- while any player is within a radius of 15 blocks of you, and you are not full health, gain 20 AE a second. At 300 AE, all players around you are exposed. At 600 AE, lose all AE and gain speed.
+        4. Metal Heart- while afflicted with slowness, weakeness, or hunger, gain 20 AE a second for each of the listed status affects you are afflicted with. once you have no status affects, sneaking will give you slowness and regeneration, with a time equal to your AE/10.
+        5. Ticker- while in a 4 block range of TNT or Fireballs, gain 20 AE a second. at 30 AE, spawn TNT on all players within 25 blocks of you, with a fuse of 2 seconds. additionally, gain 1 inert tnt.
+        6. Eulogy- while at max health, gain 20 AE a second, up to 100 AE. while sneaking, consume 20 AE a second to gain regeneration. while at 0 AE, you will always be exhausted. 
+        7. Hustle!- while slowed or sped, gain 20 AE a second, once you have 120 AE, gain speed and jump boost for 5 seconds, and reset your AE. additionally, you cannot be weakened.
+        8. Rift Walker- while sneaking, gain 20 AE a second. once you have 80 AE, consume all AE and spawn an a rift that is only visble to you. after 10 seconds, teleport to your rift. spawning a rift will put you in a debt, of 220 AE. after teleporting, become exhausted.
+        9. Libation- while sneaking, gain 20 AE a second. once you have 30 AE, become inflicted with fatal injury, afterwards, gain regeneration for 20 seconds, saturation II for 1 second, speed for 10 seconds, and absorbtion II for 30 seconds.
+        10. Imperceptible- start with 60 AE, sneaking consumes 20 AE a second. While sneaking and have any positive amount of AE gain invisibility of 1 second. while there are no players within 28 blocks, gain 20 AE a second. AE caps at 70
+        11. Unremarkable- while there are no player within 8 blocks of you, gain 20 AE a second. once you reach 1k AE max your saturation and health.
+
+
+
+Dictionary:
+ -exhausted : an effect that causes you to be slowed, weakened, and hungry for 4 seconds. If you have full hunger while exhausted, you are not slowed or weakened.
+ -exposed : an effect that causes you to glow, and have speed and strength strength removed for 4 seconds. If a player is within 3 blocks of you while exposed, gain slowness and stop glowing.
+ -bleeding : an effect that causes you to take 1 heart of damage every 2 seconds for 8 seconds. players inflicted with bleeding cannot gain regeneration or absorbtion.
+ -concused : an effect that causes you to be blind and unable to use items for 6 seconds.
+ -revealed : an effect that causes the inflicting player to see a pillar of particals above you and below you.
+ -fatal injury : players afflicted with fatal injury gain bleeding, poison, weakeness, and slowness for 8 seconds.
+ -in air : a condition: if a player has air for 2.5 blocks beneath them
+ -inert : an inert item has none of the special propeties it normally would.  

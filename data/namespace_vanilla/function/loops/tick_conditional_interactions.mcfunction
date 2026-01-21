@@ -54,3 +54,27 @@
  execute at @e[distance=..200,tag=Snowball_I,type=interaction] run particle wax_on ~ ~ ~ 0.2 0.06 0.2 0.0 1 force @a[scores={utility=1}]
  execute at @e[distance=..200,tag=Ender_Pearl_I,type=interaction] run particle wax_on ~ ~ ~ 0.2 0.06 0.2 0.0 1 force @a[scores={utility=2}]
  execute at @e[distance=..200,tag=Shears_I,type=interaction] run particle wax_on ~ ~ ~ 0.2 0.06 0.2 0.0 1 force @a[scores={utility=3}]
+#Apmlifier room
+execute at @e[tag=Passive_A,distance=..200,type=text_display] run title @a[scores={Passive_Amplifiers=1},distance=..6] actionbar {text:"Currently Equiped: Shadowborn",bold:true,color:"#12D70F"}
+execute at @e[tag=Passive_A,distance=..200,type=text_display] run title @a[scores={Passive_Amplifiers=2},distance=..6] actionbar {text:"Currently Equiped: Bloodsplatter",bold:true,color:"#12D70F"}
+execute at @e[tag=Passive_A,distance=..200,type=text_display] run title @a[scores={Passive_Amplifiers=3},distance=..6] actionbar {text:"Currently Equiped: Inclination",bold:true,color:"#12D70F"}
+execute at @e[tag=Passive_A,distance=..200,type=text_display] run title @a[scores={Passive_Amplifiers=4},distance=..6] actionbar {text:"Currently Equiped: Idiosyncrasy",bold:true,color:"#12D70F"}
+execute at @e[tag=Passive_A,distance=..200,type=text_display] run title @a[scores={Passive_Amplifiers=5},distance=..6] actionbar {text:"Currently Equiped: Obituary",bold:true,color:"#12D70F"}
+execute at @e[tag=Passive_A,distance=..200,type=text_display] run title @a[scores={Passive_Amplifiers=6},distance=..6] actionbar {text:"Currently Equiped: Of Welkin",bold:true,color:"#12D70F"}
+execute at @e[tag=Passive_A,distance=..200,type=text_display] run title @a[scores={Passive_Amplifiers=7},distance=..6] actionbar {text:"Currently Equiped: Of Abyss",bold:true,color:"#12D70F"}
+execute at @e[tag=Passive_A,distance=..200,type=text_display] run title @a[scores={Passive_Amplifiers=8},distance=..6] actionbar {text:"Currently Equiped: Eleventh Hour",bold:true,color:"#12D70F"}
+execute at @e[tag=Passive_A,distance=..200,type=text_display] run title @a[scores={Passive_Amplifiers=9},distance=..6] actionbar {text:"Currently Equiped: Featherlight",bold:true,color:"#12D70F"}
+execute at @e[tag=Passive_A,distance=..200,type=text_display] run title @a[scores={Passive_Amplifiers=10},distance=..6] actionbar {text:"Currently Equiped: Apprehension",bold:true,color:"#12D70F"}
+execute at @e[tag=Passive_A,distance=..200,type=text_display] run title @a[scores={Passive_Amplifiers=11},distance=..6] actionbar {text:"Currently Equiped: Normalcy",bold:true,color:"#12D70F"}
+
+execute at @e[tag=Energy_A,distance=..200,type=text_display] run title @a[scores={Energy_Amplifiers=1},distance=..6] actionbar {text:"Currently Equiped: Descention",bold:true,color:"#12D70F"}
+execute at @e[tag=Energy_A,distance=..200,type=text_display] run title @a[scores={Energy_Amplifiers=2},distance=..6] actionbar {text:"Currently Equiped: Athletics",bold:true,color:"#12D70F"}
+execute at @e[tag=Energy_A,distance=..200,type=text_display] run title @a[scores={Energy_Amplifiers=3},distance=..6] actionbar {text:"Currently Equiped: Weary",bold:true,color:"#12D70F"}
+execute at @e[tag=Energy_A,distance=..200,type=text_display] run title @a[scores={Energy_Amplifiers=4},distance=..6] actionbar {text:"Currently Equiped: Metal Heart",bold:true,color:"#12D70F"}
+execute at @e[tag=Energy_A,distance=..200,type=text_display] run title @a[scores={Energy_Amplifiers=5},distance=..6] actionbar {text:"Currently Equiped: Pyromaniac",bold:true,color:"#12D70F"}
+execute at @e[tag=Energy_A,distance=..200,type=text_display] run title @a[scores={Energy_Amplifiers=6},distance=..6] actionbar {text:"Currently Equiped: Eulogy",bold:true,color:"#12D70F"}
+execute at @e[tag=Energy_A,distance=..200,type=text_display] run title @a[scores={Energy_Amplifiers=7},distance=..6] actionbar {text:"Currently Equiped: Hustle!",bold:true,color:"#12D70F"}
+execute at @e[tag=Energy_A,distance=..200,type=text_display] run title @a[scores={Energy_Amplifiers=8},distance=..6] actionbar {text:"Currently Equiped: Rift Walker",bold:true,color:"#12D70F"}
+execute at @e[tag=Energy_A,distance=..200,type=text_display] run title @a[scores={Energy_Amplifiers=9},distance=..6] actionbar {text:"Currently Equiped: Libation",bold:true,color:"#12D70F"}
+execute at @e[tag=Energy_A,distance=..200,type=text_display] run title @a[scores={Energy_Amplifiers=10},distance=..6] actionbar {text:"Currently Equiped: Imperceptible",bold:true,color:"#12D70F"}
+execute at @e[tag=Energy_A,distance=..200,type=text_display] run title @a[scores={Energy_Amplifiers=11},distance=..6] actionbar {text:"Currently Equiped: Unremarkable",bold:true,color:"#12D70F"}

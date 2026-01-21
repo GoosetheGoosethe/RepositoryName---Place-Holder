@@ -1,3 +1,4 @@
+execute if entity @s[scores={concused=2..}] run return fail
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:fire_charge"}}] as @s anchored eyes run function namespace_vanilla:physics/fire_ball_leader
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:fire_charge"}}] run clear @s fire_charge 1
 
@@ -23,6 +24,8 @@ execute if entity @s[nbt={SelectedItem:{id:"minecraft:red_dye"}}] run scoreboard
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:red_dye"}}] run scoreboard players set @s utility 0
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:red_dye"}}] run scoreboard players set @s weaponry 0
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:red_dye"}}] run scoreboard players set @s shore 0 
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:red_dye"}}] run scoreboard players set @s Energy_Amplifiers 0 
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:red_dye"}}] run scoreboard players set @s Passive_Amplifiers 0 
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:red_dye"}}] run title @s actionbar {text:"Equipment reset",color:"red"}
 
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:purple_dye"}}] run dialog show @s namespace_vanilla:gamerules

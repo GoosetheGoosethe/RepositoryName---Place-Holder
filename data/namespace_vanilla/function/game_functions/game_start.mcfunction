@@ -1,4 +1,4 @@
- execute unless entity @s[scores={utility=1..,shore=1..,weaponry=1..,munition=1..}] run return run title @s actionbar {text:"You must select 4 items (1 from each catagory) before you can enter the game! ",color:"red"}
+ execute unless entity @s[scores={utility=1..,shore=1..,weaponry=1..,munition=1..}] run return run title @s actionbar {text:"You must select 4 items and 2 Amplifers (1 from each catagory) before you can enter the game! ",color:"red"}
  
      tp @s 0 1 0
 #function run when game is started
@@ -6,6 +6,7 @@
      effect give @s saturation 3 100 true
      effect give @s slowness 1 3 true
      effect give @s resistance 3 100 true
+     effect give @s[scores={Passive_Amplifiers=11}] absorption 20 2 true
 
      scoreboard players set @s died 0
      tag @s remove dead
@@ -18,7 +19,7 @@
      execute if entity @s[scores={weaponry=1}] run give @s stone_sword[item_name=["§4 Stone Sword"]]
      execute if entity @s[scores={weaponry=2}] run give @s golden_axe[item_name=["§4 Golden Axe"]]
      execute if entity @s[scores={weaponry=3}] run give @s bow[item_name=["§4 Bow"]]
-     execute if entity @s[scores={weaponry=3}] run give @s arrow 16
+     execute if entity @s[scores={weaponry=3}] run give @s arrow 32
 
      execute if entity @s[scores={munition=1}] run give @s fire_charge[consumable={consume_seconds:1000000000},item_name=["§5 Fire Ball"]] 12
      execute if entity @s[scores={munition=2}] run give @s tnt[consumable={consume_seconds:1000000000},item_name=["§5 TNT"]] 10

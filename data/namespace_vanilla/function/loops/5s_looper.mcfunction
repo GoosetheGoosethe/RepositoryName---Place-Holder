@@ -53,6 +53,9 @@ kill @e[distance= 300..10000,type=!player]
     execute unless entity @e[distance=..200,tag=Ender_Pearl_I] run summon interaction 9 -59 -26 {Tags:["Ender_Pearl_I"],response:true}
     execute unless entity @e[distance=..200,tag=Shears_I] run summon interaction 9 -59 -29 {Tags:["Shears_I"],response:true}
 
+   #text displayes
+   execute unless entity @e[distance=..200,tag=Passive_A] run summon text_display 10 -56.5 30 {Tags:["Passive_A"],text:[{"color":"#00BBFF","text":"P"},{"color":"#08B0FF","text":"a"},{"color":"#11A5FF","text":"s"},{"color":"#199AFF","text":"s"},{"color":"#228FFF","text":"i"},{"color":"#2A84FF","text":"v"},{"color":"#3379FF","text":"e "},{"color":"#3B6EFF","text":"A"},{"color":"#4463FF","text":"m"},{"color":"#4C58FF","text":"p"},{"color":"#554DFF","text":"l"},{"color":"#5D42FF","text":"i"},{"color":"#6637FF","text":"f"},{"color":"#6E2CFF","text":"i"},{"color":"#7721FF","text":"e"},{"color":"#7F16FF","text":"r"},{"color":"#9000FF","text":"s"}],Rotation:[90F,0F]}
+   execute unless entity @e[distance=..200,tag=Energy_A] run summon text_display 0 -56.5 30 {Tags:["Energy_A"],Rotation:[-90F,0F],text:[{"color":"#911C1C","text":"E"},{"color":"#8E1A2A","text":"n"},{"color":"#8B1938","text":"e"},{"color":"#871747","text":"r"},{"color":"#841555","text":"g"},{"color":"#811363","text":"y "},{"color":"#7E1271","text":"A"},{"color":"#7A107F","text":"m"},{"color":"#770E8E","text":"p"},{"color":"#740C9C","text":"l"},{"color":"#710BAA","text":"i"},{"color":"#6D09B8","text":"f"},{"color":"#6A07C6","text":"i"},{"color":"#6705D4","text":"e"},{"color":"#6404E3","text":"r"},{"color":"#5D00FF","text":"s"}]}
 #spawnpoint
  spawnpoint @a 0 -59 10
 #loop

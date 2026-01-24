@@ -89,41 +89,42 @@ clear @a bucket
 #amplifier secter
     
     #passive
-     #Shadowborn
+     #Shadowborn 1
      execute as @a[predicate=namespace_vanilla:darkness,scores={Passive_Amplifiers=1},distance=..500] run effect give @s strength 1 0 true
-     #Bloodsplater
+     #Bloodsplater 2
      tag @a[scores={Passive_Amplifiers=2,health=20..}] add max_health
      execute at @a[scores={Passive_Amplifiers=2,health=..19},tag=max_health] run scoreboard players set @a[distance=1..8] bleeding 181
 
 
      tag @a[scores={Passive_Amplifiers=2,health=..19},tag=max_health] remove max_health
-     #Obituary
+     #Obituary 3
      effect give @a[scores={Passive_Amplifiers=5,health=..8},distance=..600] hunger 2 0 true 
      effect give @a[scores={Passive_Amplifiers=5,health=..8},distance=..600] poison 1 1 true 
      effect give @a[scores={Passive_Amplifiers=5,health=..8},distance=..600] strength 1 2 true 
-     #Of Welkin
+     #Of Welkin 4
      effect give @a[scores={Passive_Amplifiers=6},predicate=namespace_vanilla:welkin_req,distance=..600] slow_falling 6 1 true
      execute as @a[scores={Passive_Amplifiers=6},distance=..600] if entity @s[nbt={active_effects:[{id:"minecraft:slow_falling"}]}] run attribute @s gravity base set 0.02
      execute as @a[scores={Passive_Amplifiers=6},distance=..600] unless entity @s[nbt={active_effects:[{id:"minecraft:slow_falling"}]}] run attribute @s gravity base set 0.08
-     #Of Abyss
+     #Of Abyss 5
      effect give @a[scores={Passive_Amplifiers=7},predicate=namespace_vanilla:abyss_req,distance=..600,tag=!dead] speed 1 0 true
      effect give @a[scores={Passive_Amplifiers=7},predicate=!namespace_vanilla:abyss_req,distance=..600,tag=!dead] weakness 1 0 true
-     #Featherlight
+     #Featherlight 6
      execute as @a[scores={Passive_Amplifiers=9},tag=!dead,distance=..600] run attribute @s max_health base set 14
      effect give @a[scores={Passive_Amplifiers=9},tag=!dead,distance=..600] speed 2 0 true
      effect give @a[scores={Passive_Amplifiers=9},tag=!dead,distance=..600] jump_boost 2 1 true
-     #aprhension
+     #aprhension 7
      scoreboard players add @e[type=tnt,distance=..600] dummycount 1
      execute at @e[type=tnt,distance=..600,scores={dummycount=5..}] run playsound block.note_block.chime master @a[scores={Passive_Amplifiers=10},distance=..35] ~ ~ ~ 1 1 1
      execute at @e[type=tnt,distance=..600,scores={dummycount=5..}] run particle raid_omen ~ ~ ~ 0 8 0 0 40 force @a[scores={Passive_Amplifiers=10},distance=..35]
      execute at @a[scores={Passive_Amplifiers=10},distance=..600] at @a[distance=1..45,scores = {Passive_Amplifiers=..9}] run particle raid_omen ~ ~ ~ 0 8 0 0 40 force @a[scores={Passive_Amplifiers=10},distance=..35]
      execute at @a[scores={Passive_Amplifiers=10},distance=..600] at @a[distance=1..45,scores = {Passive_Amplifiers=9..}] run particle raid_omen ~ ~ ~ 0 8 0 0 40 force @a[scores={Passive_Amplifiers=10},distance=..35]
      scoreboard players set @e[type=tnt,distance=..600,scores={dummycount=6..}] dummycount 0
-     #Normalcy
+     #Normalcy 8
       execute as @a[scores={Passive_Amplifiers=11},tag=!dead,distance=..600] run attribute @s max_health base set 24
       execute as @a[tag=dead,distance=..600] run attribute @s max_health base set 20
     
     #Energy
+     scoreboard players set @a Energy_Amplifiers 0
      #Descention
      execute as @a[scores={Energy_Amplifiers=1},tag=!dead,distance=..600] store result bossbar ae_descention value run scoreboard players get @s AE
      scoreboard players add @a[scores={Energy_Amplifiers=1,AE=..41},nbt={OnGround:0b},tag=!dead,distance=..600] AE 1
@@ -160,7 +161,7 @@ clear @a bucket
         effect give @a[scores={Energy_Amplifiers=6,AE=10..},tag=!dead,distance=..600,predicate=namespace_vanilla:sneaking] regeneration 2 1 true
         scoreboard players remove @a[scores={Energy_Amplifiers=6,AE=0..},tag=!dead,distance=..600,predicate=namespace_vanilla:sneaking] AE 8
 
-    #hustle
+    # ustle
      execute as @a[scores={Energy_Amplifiers=7},tag=!dead,distance=..600] store result bossbar ae_hustle value run scoreboard players get @s AE
      scoreboard players add @a[scores={Energy_Amplifiers=7,AE=..120},nbt={active_effects:[{id:"minecraft:speed"}]},distance=..600,tag=!dead] AE 1
      scoreboard players add @a[scores={Energy_Amplifiers=7,AE=..120},nbt={active_effects:[{id:"minecraft:slowness"}]},distance=..600,tag=!dead] AE 1
